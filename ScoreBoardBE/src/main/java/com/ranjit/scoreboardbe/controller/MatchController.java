@@ -26,7 +26,21 @@ public class MatchController {
     public ResponseEntity<List<Match>> getLiveMatches(){
 
      return new ResponseEntity<>(this.matchService.getAllLiveMatches(), HttpStatus.OK);
+    }
+
+    @GetMapping
+    public ResponseEntity<List<Match>> getAllMatches(){
+        ResponseEntity<List<Match>> listResponseEntity = new ResponseEntity<>(this.matchService.getAllMatches(), HttpStatus.OK);
+        return listResponseEntity;
+    }
+
+    // get team point table
+    @GetMapping("/points")
+    public ResponseEntity<?> getPointTable(){
+
+        return new ResponseEntity<>(this.matchService.getPointTable(), HttpStatus.OK);
 
     }
+
 
 }
