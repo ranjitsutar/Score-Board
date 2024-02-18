@@ -8,20 +8,25 @@ export const routes: Routes = [
 
 {
     path : "history",
-    component : HistoryComponent
+    component : HistoryComponent,
+    title : "Match Histroy | CrickInformer"
 },
 
 {
     path : "home",
-    component : HomeComponent
+    component : HomeComponent,
+    title : "Home | CrickInformer"
+
 },
 {
     path : "live",
-    component : LiveComponent
+    component : LiveComponent,
+    title : "Live Matches | CrickInformer"
 },
 {
     path : "point-table",
-    component : PointTableComponent
+    component : PointTableComponent,
+    title : "Point Table "
 },
 
 
